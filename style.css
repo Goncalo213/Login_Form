@@ -3,15 +3,24 @@
     padding: 0;
 }
 
+:root{
+    /* Colors*/
+    --body: #006494;
+    --main: #13293d;
+    --leter: #e8f1f2;
+    --button: #1b98e0;
+}
+
 body {
-    background-color: #006494;
+    background-color: var(--body);
 }
 
 .main {
     margin-left: 550px;
     margin-right: 550px;
-    background-color: #13293d;
+    background-color: var(--main);
     margin-top: 90px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,26 +41,28 @@ body {
 
 .title-ini {
     margin-top: 10px;
-    color: #e8f1f2;
+    color: var(--leter);
     border-radius: 10px;
-    background-color: #006494;
+    background-color: var(--body);
     padding: 5px 10px 5px 10px;
     margin-bottom: 10px;
 }
 
 .inputUser {
     margin-top: 20px;
-    background-color: #13293d;
+    background-color: var(--main);
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 10 #e8f1f2;
+    border-bottom: 10 #fff;
     width: 90%;
     margin-bottom: 10px;
+    outline: none;
+    color: var(--leter);
 }
 
 .inputUser::placeholder{
-    color: #e8f1f2;
+    color: var(--leter);
 }
 
 .check-sexo{
@@ -59,7 +70,7 @@ body {
     display: flex;
     flex-direction: column;
     list-style: none;
-    color: #e8f1f2;
+    color: var(--leter);
     margin-bottom: 20px;
 }
 
@@ -70,8 +81,12 @@ body {
 
 .datetime{
     width: 90%;
-    color: #e8f1f2;
+    color: var(--leter);
     margin-bottom: 10px;
+}
+
+#birthday{
+    cursor: pointer;
 }
 
 .text_data{
@@ -81,10 +96,71 @@ body {
 .btn{
     margin-top: 20px;
     margin-bottom: 10px;
-    background-color: #1b98e0;
+    background-color: var(--button);
     border: none;
     width: 90%;
     height: 30px;
     border-radius: 10px;
-    color: #e8f1f2;
+    color: var(--leter);
+    cursor: pointer;
+}
+
+.jaregistado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.log_text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--leter);
+    margin-left: 5px;
+    width: 350px;
+}   
+
+.log{
+    position: absolute;
+    left: 750px;
+    bottom: 50px;  
+    background-color: transparent;
+    border: none;
+    color: var(--leter);
+    margin-left: 0px;
+}
+
+.log:hover{
+    color: var(--button);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.log_feito{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+.log_bt{
+    position: absolute;
+    left: 800px;
+    top: 320px;
+    background-color: transparent;
+    border: none;
+    color: var(--leter);
+    margin-left: 0px;
+}
+
+.log_bt:hover{
+    color: var(--button);
+    text-decoration: underline;
+    cursor: pointer;
 }

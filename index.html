@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario com Banco de Dados</title>
+    <title>Registo</title>
 
     <!--- CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -13,12 +13,13 @@
 
 <body>
     <div class="main">
-        <h4 class="title-ini">Formulário de Clientes</h4>
+        <h4 class="title-ini">Registo de Clientes</h4>
         <div class="border">
             
             <input type="text" name="nome" id="nome" class="inputUser" placeholder="Nome" required>
-            <input type="text" name="email" id="email" class="inputUser" placeholder="Email" required>
-            <input type="text" name="tele" id="tele" class="inputUser" placeholder="Telefone" required>
+            <input type="email" name="email" id="email" class="inputUser" placeholder="Email" required>
+            <input type="tel" name="tele" id="tele" class="inputUser" placeholder="Telefone" required>
+            <input type="password" name="password" id="password" class="inputUser" placeholder="Password" required>
             
             
             <div class="check-sexo">
@@ -39,13 +40,19 @@
             </div>
             <div class="datetime">
                 <label for="birthday" class="text_data">Data de Nascimento</label>
-                <input type="datetime-local" id="birthday" name="birthday">
+                <input type="date" id="birthday" name="birthday">
             </div>
 
             <input type="text" name="city" id="city" class="inputUser" placeholder="Cidade" required>
             <input type="text" name="endereco" id="endereco" class="inputUser" placeholder="Endereço" required>
 
             <button type="button" class="btn">Enviar</button>
+
+            <div class="jaregistado">
+                <p class="log_text">Já estou regitado!</p>
+                <a  href="login.html"><button type="button" class="log">Fazer Login</button></a>
+            </div>
+            
         </div>
     </div>
 
